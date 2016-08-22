@@ -1,0 +1,329 @@
+@font-face {
+  font-family: "KFhimaji";
+  src: url("../fonts/KFhimaji.otf");
+}
+
+body{
+	font-family: "KFhimaji";
+	margin: 0;
+	padding: 0;
+}
+
+/*-----さける-----*/
+.header { 
+	z-index: 1000;
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: scroll;
+	background-size:100vw 800vh;
+}
+
+.sakeru {
+	height: 300vh;
+	width: 100%;
+}
+
+
+/*-----メイン-----*/
+p {
+	line-height: 100px;
+	font-size: 3vw;
+}
+
+/*.main {
+	height: 1200vh;
+	width: 100%;
+	display: block;
+	background-color: gray;
+}*/
+
+.nav-text{
+	writing-mode: vertical-rl;
+	position: absolute;
+	font-size:5px;
+	color:black;
+	width: 40px;
+	right: 20px;
+	top:10vh;
+	display: none;
+}
+
+/*-----トップ-----*/
+.rank{
+	width:90vw;
+	position: relative;
+}
+
+.rank img{
+	position: absolute;
+	width:18%;
+}
+
+.title{
+	position: absolute;
+	width:60%;
+	left:20vw;
+	top:5vh;
+	z-index: 1000;
+	display: none;
+}
+
+.memo{
+	position: absolute;
+	top:23vh;
+	font-size: 24px;
+	color:black;
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+	display: none;
+}
+
+.rank .rankdai{
+	width: 70%;
+	margin: 0 auto;
+	top:80%;
+	left:20%;
+	z-index: 0;
+	display: none;
+}
+
+.rank .rank1-top{
+	width: 17%;
+	left:41vw;
+	top:-17vh;
+	z-index: 1;
+	display: none;
+}
+
+.rank .rank2-top{
+	width: 17%;
+	left:28vw;
+	top:-13vh;
+	z-index: 1;
+	display: none;
+
+}
+
+.rank .rank3-top{
+	width:19%;
+	left:54vw;
+	top:-5vh;
+	z-index: 1;
+	display: none;
+}
+
+.rank .rank4-top{
+	width: 23%;
+	left:14vw;
+	top:-14vh;
+	z-index: 1;
+	display: none;
+}
+
+.rank .rank5-top{
+	width:17%;
+	left:67vw;
+	top:0vh;
+	z-index: 1;
+	display: none;
+}
+
+.rank .che:hover{
+  margin: 4px 0px 0px 4px;
+}
+
+.scroll{
+	position: absolute;
+	width: 7vw;
+	height: auto;
+	top:86vh;
+	left: 45.5vw;
+	z-index: 1000;
+	display: none;
+
+}
+/*-----ランキング-----*/
+.section:nth-child(1){
+	background-color:#FFCCCC;
+}
+
+.section:nth-child(2){
+	background-color:#FFFFCC;
+}
+
+.section:nth-child(3){
+	background-color:#CCFFCC;
+}
+
+.section:nth-child(4){
+	background-color:#CCFFFF;
+}
+	
+.section:nth-child(5){
+	background-color:#CCCCFF;
+}
+
+.section:nth-child(6){
+	background-color:#FFFFCC;
+}
+
+.section:nth-child(7){
+	background-color:#FFCCCC;
+}
+
+.section{
+	height: 100vh;
+}
+
+.section .matome{
+	width:90vw;
+	height: 90vh;
+	margin: 0 auto;
+
+}
+
+.p-rank{
+	position: absolute;
+	width:100%;
+	top:5%;
+	left:0;
+	font-size:400%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.section .imgs {
+  float: left;
+  width: 45%;
+  height: 80%;
+  margin-left: 10%;
+  position: relative;
+}
+
+.section .imgs .chee{
+  width: 90%;
+  position: absolute;
+  top:0px;
+  z-index: 1;
+  display: none;
+}
+
+.rank5 .imgs .chee{
+	left:10%;
+}
+
+.rank1 .imgs .chee{
+	left:3%;
+}
+
+.section .imgs .sara {
+  width: 90%;
+  position: absolute;
+  top: 52vh;
+  z-index: 0;
+  display: none;
+}
+
+.section .imgs img:nth-child(odd) {
+	float:right;
+}
+
+.section .imgs img:nth-child(even) {
+	float:left;
+}
+
+
+.section .kai:nth-child(odd) {
+	margin-top: 10%;
+	font-size: 1vw;
+	float: left;
+	margin-left:10%;
+	box-sizing: border-box;
+	padding: 4%;
+	background-color: white;
+	width: 30%;
+	height: 80%;
+	border-radius: 10px;
+	display: none;
+}
+
+.section .kai:nth-child(even) {
+	margin-top: 10%;
+	float: right;
+	font-size: 1vw;
+	margin-right:10%;
+	box-sizing: border-box;
+	padding: 4%;
+	background-color: white;
+	width: 30%;
+	height: 80%;
+	border-radius: 10px;
+	display: none;
+}
+
+.section .kai button{
+	float:left;
+	box-sizing: border-box;
+	width:45%;
+	height: 10%;
+	padding:5%;
+	background-color:pink;
+	border-radius: 10px;
+	font-size:90%;
+	margin-top: 10px;
+}
+
+.section .kai button:first-child{
+	margin-right: 5%;
+}
+
+a{
+	color:black;
+}
+
+.section .article{
+	margin-top: 10%;
+	float: right;
+	margin-right:10%;
+	box-sizing: border-box;
+	padding: 30px;
+	background-color: white;
+	width: 80%;
+	height: 80%;
+	border-radius: 10px;
+	display: none;
+}
+/*.hidden{
+	visibility: hidden;
+}
+*/
+
+.other{
+	width: 100vh;
+}
+
+.thanks{
+	width: 100%;
+}
+
+.thanks img{
+	width: 40%;
+	float: left;
+	margin: 0 auto;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 40px;
+}
+
+.thanks p{
+	float:left;
+	box-sizing: border-box;
+	width:30%;
+	height: 10%;
+	border-radius: 10px;
+	font-size:120%;
+	margin-top: 10px;
+}
